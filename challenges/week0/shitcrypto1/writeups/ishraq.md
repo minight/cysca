@@ -15,7 +15,7 @@ message length + 32), so we know our key is 67 bytes and our message is 34 bytes
 
 # Recovering the key
 Let ek = ciphertext[34:34+67], i.e. it's the ciphertext corresponding to the
-key. We now ek[i] = key[i] ^ key[(i+34)%67]. Rearranging gives key[(i+34)%67] =
+key. We know ek[i] = key[i] ^ key[(i+34)%67]. Rearranging gives key[(i+34)%67] =
 key[i] ^ ek[i]. We know key[0] is 'A', so this lets us work out key[34], which
 lets us work out key[1] etc, so we have enough to recover the whole key (the
 important fact being 34 and 67 are coprime).
