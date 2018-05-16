@@ -1,12 +1,12 @@
-#!/usr/bin/python2
-What does encrypt do?
+# What does encrypt do?
 encrypt(k,m,n) takes k = key, m = message, n = bit length parameter.
 Repeat k til it is the same length as m. Treat each as a stream of 8|m| bits
 and split that into blocks of n bits, padding with 0s if necessary.
 Then add each pair of corresponding blocks mod 2^n, and then convert back to
 the original format. So we just have a vignere cipher mod 2^n.
 
-To solve, use the fact that the message starts with 'flag{' (which gives us 40
+# Solution
+We'll use the fact that the message starts with 'flag{' (which gives us 40
 bits). Guessing the value of n=3 (less than 8 so we just try them all), and
 running the process in reverse gives us the first 39 bits of the key (in the
 script we assume we get 40 bits, I think this is just luck and in general we
@@ -23,7 +23,7 @@ possibilities and see which one gives the "right" flag, here we can tell by if
 the final character of the flag is }.
 
 Note we do not need to implement anything for decryption, we (roughly speaking)
-just change the + to a - in encr_vals.
+just change the + to a - in encr\_vals.
 
 ```
 import sys, string
