@@ -1,6 +1,6 @@
 # Babyheap
 ### Prequisite Knowledge
-Get your head around glibc heap implementation: https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/ (LIKE THIS IS REALLY IMPORTANT SO READ IT)
+Get your head around glibc heap implementation: https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/ (LIKE THIS IS REALLY IMPORTANT SO READ IT)  
 Get yourself some juicy source code: https://www.sourceware.org/ml/libc-alpha/2016-08/msg00212.html
 
 I will make the assumption that you have read AND understood the above resources in this writeup. Also note that to save space I will refer directly to the python functions I used to interact with the program (this should be self-explanatory when you see it).
