@@ -1,3 +1,13 @@
+source: custom `based off cmd3 from pwnable.kr`
+writeup: see the writeup file
+
+notes:
+* binary provided
+* setup instructions
+
+flag:
+flag{BashingYourHeadAgainstTheWall}
+
 Weird bash tricks for fun and profit.
 
 ```python
